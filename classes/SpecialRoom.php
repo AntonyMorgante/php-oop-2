@@ -10,4 +10,25 @@ class SpecialRoom extends Room{
         $this->water = $_water;
         $this->vibration = $_vibration;
     }
+
+    public function getSmokeInfo(){
+        if ($this->smoke){
+            return "fumo";
+        }
+        return "fumo";
+    }
+
+    public function getWaterInfo(){
+        if ($this->water){
+            return "acqua";
+        }
+        return "acqua";
+    }
+
+    public function getVibrInfo(){
+        if ($this->vibration){
+            return "vibrazione";
+        }
+        return "vibrazione";
+    }
 }
